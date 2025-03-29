@@ -1,9 +1,10 @@
-import { Button } from "@/components/ui/button";
+import { db } from "@/lib/db";
 
-export default function Home() {
+export default async function Home() {
+  const user = await db.user.findMany();
   return (
-    <main className="h-[300vh] grid place-items-center">
-      <Button>click</Button>
+    <main className="min-h-screen grid place-items-center">
+      {JSON.stringify(user)}
     </main>
   );
 }
