@@ -4,6 +4,7 @@ export enum Routes {
   SIGNIN = "sign-in",
   POSTS = "posts",
   NEWDASHBOARD = "new",
+  EDIT = "edit",
 }
 export enum Environments {
   PROD = "production",
