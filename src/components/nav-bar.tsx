@@ -10,13 +10,13 @@ const NavBar = () => {
     <header className="border-b">
       <div className="container mx-auto flex justify-between items-center h-16 px-4">
         <Link className="font-black text-xl" href={Routes.ROOT}>
-          NextClerk 🎯
+          Blog 🎯
         </Link>
         <div className="flex gap-2">
           <SignedIn>
             <Link
               className={`${buttonVariants()} uppercase`}
-              href={Routes.DASHBOARD}
+              href={`/${Routes.DASHBOARD}`}
             >
               <LayoutDashboard />
               dashboard

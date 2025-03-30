@@ -6,15 +6,23 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Routes } from "@/lib/enum";
-import { postList } from "@/lib/moc-data";
 import { formateDate } from "@/lib/utils";
 import Link from "next/link";
 import DOMPurify from "isomorphic-dompurify";
+import { db } from "@/lib/db";
 
-const BlogPostList = () => {
+const BlogPostList = async () => {
+  const posts = await db.post.findMany({
+    orderBy: {
+      createAt: "desc",
+    },
+    include: {
+      author: true,
+    },
+  });
   return (
     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-      {postList.posts.map((e) => (
+      {posts.map((e) => (
         <Link href={`/${Routes.POSTS}/${e.id}`} key={e.id}>
           <Card className="h-full transition-all hover:shadow-md">
             <CardHeader>

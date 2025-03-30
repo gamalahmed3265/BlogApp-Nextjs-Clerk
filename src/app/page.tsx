@@ -1,8 +1,8 @@
 import BlogPostList from "@/components/ui/blog.post-list";
-
+import Container from "@/components/ui/container";
 export default async function Home() {
   return (
-    <main className="container mx-auto py-10 px-4 md:px-6">
+    <Container>
       <div className="mb-8">
         <h1 className="text-3xl font-bold">Latest Posts</h1>
         <p className="text-muted-foreground">
@@ -10,6 +10,6 @@ export default async function Home() {
         </p>
       </div>
       <BlogPostList />
-    </main>
+    </Container>
   );
 }
