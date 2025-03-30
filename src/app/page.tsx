@@ -1,6 +1,15 @@
 import BlogPostList from "@/components/ui/blog.post-list";
 import Container from "@/components/ui/container";
+import { db } from "@/lib/db";
 export default async function Home() {
+  const posts = await db.post.findMany({
+    orderBy: {
+      createAt: "desc",
+    },
+    include: {
+      author: true,
+    },
+  });
   return (
     <Container>
       <div className="mb-8">
@@ -9,7 +18,7 @@ export default async function Home() {
           Explore the latest article and insights
         </p>
       </div>
-      <BlogPostList />
+      <BlogPostList posts={posts} />
     </Container>
   );
 }
