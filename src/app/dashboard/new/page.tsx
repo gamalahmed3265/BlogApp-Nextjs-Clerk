@@ -91,10 +91,10 @@ const DashboardNewPage = () => {
             {isSubmiting ? (
               <span className="flex items-center gap-1">
                 <Circle />
-                {"Submiting..."}
+                {"Creating..."}
               </span>
             ) : (
-              "Submit"
+              "Create"
             )}
           </Button>
         </form>
