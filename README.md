@@ -2,8 +2,6 @@
 
 A modern blog application built with Next.js, featuring authentication with Clerk, rich text editing with Tiptap, and database management with Prisma.
 
-![Project Screenshot](https://github.com/gamalahmed3265/BlogApp-Nextjs-Clerk/raw/main/screenshot.png)
-
 ## Features
 
 - 🛠 Next.js 15 with React 19
@@ -174,7 +172,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Ahmed Gamal - [@yourtwitter](https://twitter.com/yourtwitter) - email@example.com
+Gamal Ahmed- [@gamalahme](https://gamal-ahmed-portfolio.vercel.app/) - [email@example.com](https://gamal-ahmed-portfolio.vercel.app/)
 
 Project Link: [https://github.com/gamalahmed3265/BlogApp-Nextjs-Clerk](https://github.com/gamalahmed3265/BlogApp-Nextjs-Clerk)
 
@@ -201,7 +199,9 @@ You can customize it further by adding:
 
 ## Demo
 
-<div style="display: flex; justify-content: center;">
+### Project Screenshot
+
+<div style="display: flex; justify-content: center;width: 100%">
   <div style="max-width: 800px;">
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px;">
       <img src="./screenshots/1 (1).png" alt="Image 1" style="width: 100%; border-radius: 8px;">
