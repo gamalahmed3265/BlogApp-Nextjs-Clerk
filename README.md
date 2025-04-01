@@ -98,6 +98,8 @@ A modern blog application built with Next.js, featuring authentication with Cler
    SIGNING_SECRET
    ```
 
+   and create domain in ngrok dashbaord by Start a Tunnel and set in webhooks clark
+
 4. Set up the database:
 
    ```bash
